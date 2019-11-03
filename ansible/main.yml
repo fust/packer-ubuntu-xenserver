@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  gather_facts: yes
+
+  roles:
+    - geerlingguy.nfs
+    - geerlingguy.packer-debian
+
+  tasks:
+    - name: Install some helpful utilities.
+      apt:
+        name:
+          - wget
+          - curl
+        state: present
