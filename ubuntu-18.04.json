@@ -1,4 +1,9 @@
 {
+  "variables": {
+    "remote_host": "",
+    "remote_user": "",
+    "remote_password": ""
+  },
   "provisioners": [
     {
       "type": "shell",
@@ -26,7 +31,7 @@
       "type": "xenserver-iso",
       "remote_host": "{{user `remote_host`}}",
       "remote_username": "{{user `remote_user`}}",
-      "remote_password": "{{user `remote_password`}}!",
+      "remote_password": "{{user `remote_password`}}",
 
       "boot_command": [
         "<esc><wait5>",

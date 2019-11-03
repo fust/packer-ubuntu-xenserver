@@ -1,2 +1,3 @@
 packer_cache
 packer-ubuntu-18.04-x86_64-xenserver
+vars.json
