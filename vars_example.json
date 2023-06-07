@@ -1,0 +1,8 @@
+{
+    "remote_host": "my-xen-master.local",
+    "remote_username": "xen-root",
+    "remote_password": "xen-password",
+    "sr_iso_name": "ISO SR name",
+    "sr_name": "HDD Storage SR name"
+  }
+  

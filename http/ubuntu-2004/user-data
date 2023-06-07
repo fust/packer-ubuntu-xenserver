@@ -1,0 +1,11 @@
+#cloud-config
+autoinstall:
+  version: 1
+  identity:
+    hostname: ubuntu-server
+    # This is the crypted pass of 'vagrant'. Generate with: mkpasswd --method=SHA-512 --rounds=4096
+    password: "$6$rounds=4096$3R5ocUy6S4gAFMs$J7F7NkSzUOqNv9.2VeZ77by3PdDCc/6xnPNLpkZnPiLuVgTOs9hoyZGX9erTcpdA52hlUNIFx4pu/EvEBWx78."
+    username: vagrant
+  ssh:
+    install-server: yes
+    allow-pw: yes
